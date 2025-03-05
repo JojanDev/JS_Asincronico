@@ -6,5 +6,14 @@ function map(array, callback) {
   return nuevoArray;
 }
 
-let arrayFinal = map([1, 2, 3, 4, 5], (num) => num * 2);
-console.log(arrayFinal);
+
+let cantidad = parseInt(prompt("¿Cuantos numeros ingresara?"));
+let numeros = [];
+for (let i = 0; i < cantidad; i++) {
+  numeros.push(parseInt(prompt(`Ingrese el numero N°${i + 1}: `)));
+}
+
+let arrayFinal = map(numeros, (num) => num * 2);
+alert("Numeros doblados: "+arrayFinal);
+
+

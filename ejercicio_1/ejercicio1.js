@@ -24,6 +24,18 @@ function imprimirNumeros_SetTimeout(desde, hasta) {
   imprimir();
 }
 
+const imprimirNumeros_SetTimeout = (desde, hasta) => {
+  let contador = desde;
+
+  setTimeout(function imprimir() {
+    alert(contador);
+    if (contador < hasta) {
+      setTimeout(imprimir, 1000);
+    }
+    contador++;
+  }, 1000);
+}
+
 
 let opcion = parseInt(prompt(`Opcion:
   1. Ejercicio con setInterval.

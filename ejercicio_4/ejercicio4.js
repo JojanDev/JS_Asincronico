@@ -1,23 +1,18 @@
-const filter = (array, callback) => {
-  let nuevoArray = [];
-  for (let i = 0; i < array.length; i++) {
-    if (callback(array[i])) {
-      nuevoArray.push(array[i]);
-    }
+function filter(palabras, callback) {
+  let palabrasFiltro = [];
+  for (let i = 0; i < palabras.length; i++) {
+    callback == true ? palabrasFiltro.push(palabras[i]) : "";
   }
-  return nuevoArray;
+  return palabrasFiltro;
 }
 
-const callback = numero => numero % 2 == 0;
+const callback = word => word.length > 6;
 
-let cantidad = parseInt(prompt("Ingrese la cantidad de numeros a ingresar: "));
-
-let numeros = []
+let cantidad = parseInt(prompt("¿Cuantos palabras ingresara?"));
+let palabras = [];
 for (let i = 0; i < cantidad; i++) {
-  numeros.push(parseInt(prompt(`Ingrese el numero ${i + 1}: `)));
+  palabras.push(parseInt(prompt(`Ingrese la palabra N°${i + 1}: `)));
 }
 
-let nuevoArray = filter(numeros, callback);
-
-alert(`FILTRO NUMEROS PARES: 
-  ${nuevoArray.join(", ")}`);
+let resultado = filter(palabras, callback);
+alert("Numeros doblados: " + resultado);

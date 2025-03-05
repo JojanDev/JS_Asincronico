@@ -11,5 +11,8 @@ const encadenarPromises = async () => {
   })
 }
 
-
-console.log(encadenarPromises());
+const obtenerResultado = async() => {
+  let dato = await encadenarPromises();
+  alert(dato);
+}
+obtenerResultado();
