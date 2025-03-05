@@ -1,23 +1,10 @@
 function map(array, callback) {
   let nuevoArray = [];
   for (let i = 0; i < array.length; i++) {
-    nuevoArray = callback(array[i], nuevoArray);
+    nuevoArray.push(callback(array[i]));
   }
   return nuevoArray;
 }
 
-const callback = (numero, nuevoArray) => {
-  nuevoArray.push(numero);
-  return nuevoArray;
-}
-
-let cantidad = parseInt(prompt("Ingrese la cantidad de numeros a ingresar: "));
-
-let numeros = []
-for (let i = 0; i < cantidad; i++) {
-  numeros.push(parseInt(prompt(`Ingrese el numero ${i + 1}: `)));
-}
-
-let nuevoArray = map(numeros, callback);
-
-alert(nuevoArray.join(", "));
+let arrayFinal = map([1, 2, 3, 4, 5], (num) => num * 2);
+console.log(arrayFinal);
