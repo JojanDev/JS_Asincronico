@@ -1,48 +1,110 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-*{
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: "Roboto", serif;
+  font-family: "Poppins", sans-serif;
 }
 
-body{
+body {
+  background-color: #5d0e41;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 900;
+  color: #fff;
+  margin: 30px 0 50px;
+  text-shadow: 0 0 30px #000000;
+}
+
+.nav {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+}
+
+.lista {
+  display: flex;
   flex-direction: column;
-}
-
-.titulo{
-  margin: 30px 0;
-  font-size: 30px;
-}
-
-.lista{
+  background-color: #ff204e;
+  gap: 17px;
   list-style: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 30px;
+  border-radius: 30px;
 }
 
-.lista__item{
-  padding: 10px;
-  width: 200px;
-  background-color: #c93434;
+.lista__link {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 5px 0;
-  border-radius: 10px;
-}
-
-.lista__link{
+  gap: 15px;
+  color: #fff;
   text-decoration: none;
-  color: #ffff;
+}
+
+.indice {
+  font-weight: bold;
+  width: 50px;
+  height: 50px;
+  background-color: #a0153e;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 19px;
+}
+
+.nombre {
+  font-size: 17px;
+  background-color: #a0153e;
+  width: 600px;
+  height: 50px;
+  display: flex;
+  padding: 0 10px;
   justify-content: center;
   align-items: center;
+  border-radius: 40px;
+}
+
+.contenedor {
+  margin-top: 70px;
+  background-color: #a0153e;
+  width: 50%;
   font-size: 20px;
+  padding: 0 30px 30px 30px;
+  height: fit-content;
+  border-radius: 40px;
+  color: #dcdcdc;
+  /* text-shadow: 0 0 1px #969696; */
+  box-shadow: 0 0 30px #000000;
+}
+
+.contenedor > p {
+  margin: 0 0 20px;
+}
+
+.flecha {
+  margin: 30px 40px;
+  font-size: 60px;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.body-ejercicios {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  position: relative;
+  flex-direction: column;
+}
+
+.imagen {
+  margin: 60px;
+  width: 40%;
+  border: 5px solid #000000;
+  border-radius: 40px;
 }
