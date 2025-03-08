@@ -9,21 +9,6 @@
     }, 1000);
   }
 
-
-
-function imprimirNumeros_SetTimeout(desde, hasta) {
-
-  function imprimir() {
-    console.log(desde);
-    if (desde < hasta) {
-      desde++;
-      setTimeout(imprimir, 1000);
-    }
-  }
-  
-  imprimir();
-}
-
 const imprimirNumeros_SetTimeout = (desde, hasta) => {
   let contador = desde;
 

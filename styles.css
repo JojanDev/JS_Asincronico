@@ -84,6 +84,19 @@ body {
   margin: 0 0 20px;
 }
 
+.contenedor .respuesta{
+  margin: 0;
+}
+
+.contenedor--respuesta{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a0153e;
+  padding: 20px;
+  margin-bottom: 70px;
+}
+
 .flecha {
   margin: 30px 40px;
   font-size: 60px;
