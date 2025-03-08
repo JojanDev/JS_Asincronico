@@ -3,9 +3,9 @@ const promesa = async () => {
     setTimeout(() => {
       resolve();
     }, 3000);
-  })
-}
+  });
+};
 
-promesa.then(() => {
+promesa().then(() => {
   alert("Promisa resuelta");
-})
+});

@@ -21,6 +21,13 @@
   
   </div>
     <img src="image.png" alt="" class="imagen">
+
+    <div class="contenedor contenedor--respuesta">
+      <p>Resultado: setTimeout no interrumpe el bucle. JavaScript es monohilo, lo que significa que el setTimeout solo podrá ejecutarse cuando el hilo principal esté libre.</p>
+      <p>Como el bucle bloquea el hilo principal por más de 100ms, la ejecución del setTimeout se retrasa hasta que el bucle termine.</p>
+      <p>Para cuando se ejecute alert(i), el bucle ya habrá terminado, y i tendrá el valor máximo (100000000).</p>
+      <p class="respuesta"></p>
+    </div>
   <script src="ejercicio9.js"></script>
 </body>
 

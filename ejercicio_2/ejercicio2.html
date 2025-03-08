@@ -26,8 +26,13 @@
     <img src="image.png" alt="" class="imagen">
     <div class="contenedor contenedor--respuesta">
       <p class="respuesta">
-        Respuesta: "a) Despues del bucle."
-      </p>
+        Respuesta:   a) Despues del bucle.
+      </p>  
+      <p>Explicacion: </p>
+      <p>Cuando llamas a setTimeout, este registra la función en la cola de tareas y sigue ejecutando el código inmediatamente después, sin esperar.</p>
+      <p>JavaScript es monohilo, lo que significa que mientras el bucle pesado esté ejecutándose, ninguna otra tarea puede ejecutarse en ese mismo momento, incluyendo la función de setTimeout.</p>
+      <p>Si usaste setTimeout(funcion, 1000), el contador empieza a contar de inmediato.</p>
+      <p>Pero la función de setTimeout no se ejecutará hasta que el hilo principal esté libre, es decir, hasta que termine el bucle.</p>
       <p class="respuesta"></p>
     </div>
   <script src="ejercicio2.js"></script>

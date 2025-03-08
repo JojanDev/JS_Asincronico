@@ -8,6 +8,12 @@ const procesarLista = async (lista) => {
       })
     );
   }
+  alert("Todas las promesas resueltas");
 };
 
-procesarLista([1, 2, 3, 4, 5, 6, 7]);
+let cantidad = parseInt(prompt("Ingrese el total de elementos: "));
+let array = [];
+for (let i = 0; i < cantidad; i++) {
+  array.push(parseInt(prompt(`Ingrese el numero N°${i + 1}: `)));
+}
+procesarLista(array);

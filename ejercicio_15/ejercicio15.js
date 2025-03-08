@@ -4,4 +4,4 @@ const obtenerDatos = async (url) => {
   console.log(dataFormatJSON);
 };
 
-const datos = obtenerDatos("../datos.json");
+obtenerDatos("../datos.json");
